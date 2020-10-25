@@ -6,4 +6,6 @@ https://rand-img-gen.herokuapp.com/images
 
 2. Few screenshots are added to output folder.
 
-3. Intructions to use are provided in README.md
+3. Intructions to use are provided in README.md.
+
+4. You can find submitted code here: https://github.com/raju4789/random-img-generator
