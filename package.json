@@ -4,7 +4,6 @@
   "description": "A simple backend to generate random image",
   "main": "src/index.js",
   "scripts": {
-    "build": "webpack-dev-server",
     "start": "node ./src/index.js",
     "lint": "eslint src/**"
   },
@@ -24,9 +23,6 @@
   "devDependencies": {
     "eslint": "^7.11.0",
     "eslint-config-rallycoding": "^3.2.0",
-    "nodemon": "^1.19.2",
-    "webpack": "^4.17.2",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.7"
+    "nodemon": "^1.19.2"
   }
 }
