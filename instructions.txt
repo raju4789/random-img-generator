@@ -1,0 +1,9 @@
+1. API is deployed to heroku.
+
+Try below urls:
+https://rand-img-gen.herokuapp.com/images/{id}
+https://rand-img-gen.herokuapp.com/images
+
+2. Few screenshots are added to output folder.
+
+3. Intructions to use are provided in README.md
