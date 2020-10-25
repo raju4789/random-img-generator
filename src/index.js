@@ -25,7 +25,7 @@ app.use(
 
 app.listen(PORT, logger.info(`Server running, listening on port : ${PORT}`));
 
-app.use('/image', imageRouter);
+app.use('/images', imageRouter);
 
 app.use(errorHandler);
 

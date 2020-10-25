@@ -49,5 +49,25 @@ const storeImage = async (imageInfo) => {
     await collection.insertOne(imageInfo);
 };
 
-module.exports = { getStoredImage, storeImage };
+/**
+ * @returns all images stored in db
+ */
+const getAllDBImages = async () => {
+    logger.info('getAllDBImages called');
+
+    const db = await connectToDB();
+
+    if (!db) {
+        logger.error('DB connection failed');
+        const error = new errorModel.errorResponse(
+            errors.internal_error.withDetails('Our experts are looking into it.'));
+        throw error;
+    }
+
+    const collection = db.collection('images');
+
+    return await collection.find({}, { fields: { _id: 0 } }).toArray();
+};
+
+module.exports = { getStoredImage, storeImage, getAllDBImages };
 

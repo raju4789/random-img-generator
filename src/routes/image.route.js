@@ -5,11 +5,17 @@ const imageController = require('../controllers/image.controller');
 const router = express.Router();
 
 /**
- * Route to handle user login
- *  @middleware authoriseRequest
- *  @returns user authorisation status
- */
+ * Route to generate randon image
+ *  
+ * */
 router.route('/:id')
     .get(imageController.getImage);
+
+/**
+ * Route to generate randon image
+ *  
+ * */
+router.route('/')
+    .get(imageController.getAllImages);
 
 module.exports = router;

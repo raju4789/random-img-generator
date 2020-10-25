@@ -44,6 +44,11 @@ const generateImage = async (imageId) => {
 
 };
 
+const getStoredImages = async () => {
+    logger.info('getStoredImages called');
+    return await imageRepo.getAllDBImages();
+};
 
-module.exports = { generateImage };
+
+module.exports = { generateImage, getStoredImages };
 

@@ -17,5 +17,20 @@ const getImage = async (req, res, next) => {
     }
 };
 
-module.exports = { getImage };
+const getAllImages = async (req, res, next) => {
+    try {
+        const storedImages = await imageService.getStoredImages();
+
+        if (storedImages.length === 0) {
+            res.status(200).send({ message: 'No images found. Try adding one' });
+            return;
+        }
+        res.status(200).send(JSON.stringify(storedImages));
+    } catch (err) {
+        logger.error(`getAllImages call failed because of error: ${err.message}`);
+        next(err);
+    }
+};
+
+module.exports = { getImage, getAllImages };
 
