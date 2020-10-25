@@ -51,3 +51,11 @@ ___WITH DATA___:
   }
 
 ]
+
+# FEW SCREENSHOTS
+
+![image.png](output/RIG_1.jpg)<br><br>
+
+![image.png](output/RIG_2.jpg)<br><br>
+
+![image.png](output/RIG_3.jpg)<br><br>
