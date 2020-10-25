@@ -1,0 +1,32 @@
+{
+  "name": "random-img-generator",
+  "version": "1.0.0",
+  "description": "A simple backend to generate random image",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack-dev-server",
+    "start": "node ./src/index.js",
+    "lint": "eslint src/**"
+  },
+  "author": "Raju MLN",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.2",
+    "mongodb-memory-server": "^6.9.2",
+    "util": "^0.12.3",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-rallycoding": "^3.2.0",
+    "nodemon": "^1.19.2",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.7"
+  }
+}
