@@ -1,8 +1,8 @@
 # RANDOM IMAGE GENERATION API
 
-___Try:____ https://rand-img-gen.herokuapp.com/images/{id}
 
 ## ADD AND RETRIEVE IMAGE
+
 ### Request :
 
 ____GET____:    /images/{id}
